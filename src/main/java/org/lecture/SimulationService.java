@@ -119,14 +119,14 @@ public class SimulationService implements Service {
     /**
      * Allows the user to modify the application's settings.
      */
-    private void modifySettings() {
+    public void modifySettings() {
         this.settings = this.ioHandler.getSettingsFromUser();
     }
 
     /**
      * Prints the history of all cars that have been parked in the parking lot.
      */
-    private void printHistory() {
+    public void printHistory() {
         this.parkingGarage.getHistory().forEach(entry -> this.ioHandler.println(entry.toString()));
     }
 

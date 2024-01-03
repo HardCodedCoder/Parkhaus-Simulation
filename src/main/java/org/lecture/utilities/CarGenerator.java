@@ -17,6 +17,10 @@ public class CarGenerator {
      * @return A list containing the generated cars.
      */
     public static List<Car> generateCars(int carsToGenerate, ParkingGarage parkingGarage) {
+        if (carsToGenerate < 0) {
+            throw new IllegalArgumentException("Number of cars to generate must be greater than zero.");
+        }
+
         List<Car> generatedCars = new ArrayList<>();
         for (int i = 0; i < carsToGenerate; i++) {
             generatedCars.add(new Car(parkingGarage));
