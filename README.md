@@ -1,5 +1,3 @@
-Sure, here is a documentation of the project:
-
 # ParkingGarage
 
 This project contains a class called ParkingGarage, which represents a parking garage. The class manages the parking spots and records the parking history.
